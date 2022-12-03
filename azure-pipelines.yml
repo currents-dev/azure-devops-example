@@ -44,7 +44,6 @@ jobs:
 
       # Note the use of `currents` command
       - script: |
-          echo $CURRENTS_RECORD_KEY
           npx currents run --record --parallel --key $CURRENTS_RECORD_KEY --ci-build-id $BUILD_BUILDNUMBER
         displayName: "Run Currents tests"
         env:

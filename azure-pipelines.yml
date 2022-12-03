@@ -34,7 +34,7 @@ jobs:
         displayName: Cache Cypress binary
 
       # Install Node dependencies
-      - script: yarn install
+      - script: npm ci
         displayName: "Install NPM dependencies"
 
       # The next command starts the server and runs Cypress tests
